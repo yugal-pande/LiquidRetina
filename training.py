@@ -19,7 +19,7 @@ def extract_features(image_path):
     features = vgg_model.predict(img_array, verbose=0)
     return features.flatten()  # Flatten the features
 
-train_path = 'D:\Liquid Retina\Fruits Dataset\Training'
+train_path = ''
 X = []
 y = []
 for label in os.listdir(train_path):
@@ -39,7 +39,7 @@ classifier.fit(X, y)
 
 # Save the trained model
 import joblib
-model_path = 'Fruits_Model.joblib'
+model_path = ''
 joblib.dump(classifier, model_path)
 
 print(f"Model saved to {model_path}")

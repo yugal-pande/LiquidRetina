@@ -66,7 +66,7 @@ def augment_images(input_folder, output_folder):
                 print(f"Error processing image {filename}: {e}")
 
 if __name__ == "__main__":
-    input_folder = "D:\Liquid Retina\Chest Cancer Dataset\Data\Train\Squamous.Cell.Carcinoma_Left.Hilum"  # Change this to the path of the folder containing the input images
-    output_folder = "D:\Liquid Retina\Chest Cancer Augmented Dataset\Squamous.Cell.Carcinoma_Left.Hilum"  # Change this to the path where augmented images will be saved
+    input_folder = ""  # Change this to the path of the folder containing the input images
+    output_folder = ""  # Change this to the path where augmented images will be saved
 
     augment_images(input_folder, output_folder)

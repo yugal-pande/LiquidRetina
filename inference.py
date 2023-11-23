@@ -66,7 +66,7 @@ def preprocess_image(image_path):
 
 
 # Load the trained model
-model_path = 'D:\Liquid Retina\Fruits_Model.joblib'  # Specify the path to the trained model
+model_path = ''  # Specify the path to the trained model
 classifier = joblib.load(model_path)
 
 # Function to extract features
@@ -81,7 +81,7 @@ def extract_features(image):
     return features.flatten()  # Flatten the features
 
 # Specify the folder path containing images
-folder_path = 'D:\Liquid Retina\Testing'  # Replace with actual path
+folder_path = ''  # Replace with actual path
 
 # Make predictions and save results
 results = {}
